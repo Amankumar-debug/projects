@@ -1,0 +1,307 @@
+*{
+    font-family: Montserrat;
+    margin: 0;
+    color: #fff;
+    /* background-color:#000; */
+    overflow: hidden;
+}
+.main{
+    background-color: black;
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+
+}
+.sidebar{
+    background-color: #000;
+    width: 340px;
+    border-radius: 1rem; /*16px=1 rem*/
+    margin-right: 0.5rem;
+}
+.main_content{
+    background-color: #121212;
+    flex: 1;
+    overflow: auto;
+     border-radius: 1rem;
+     padding: 0 1.5rem 0 1.5rem;
+     
+}
+.music_player{
+    background-color:black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+     border-radius: 1rem;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.nav{
+    border-radius: 1rem;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: center;
+    padding: .5rem .75rem;
+}
+.nav_option{
+    line-height: 2.5rem;
+    opacity: .5;
+    padding: 0.5rem 0.75rem;
+}
+.nav_option:hover{
+    opacity: 1;
+}
+.nav_option i{
+    font-size: 1.25rem;
+}
+.nav_option a{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: .5rem;
+    padding: .5rem .75rem;
+}
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lib_option img{
+         height: 1.25rem;
+         width: 1.25rem;
+}
+.icon{
+    font-size: 1.25rem;
+    display: flex;
+}
+.icon i{
+    margin-right: 1rem;
+    opacity: .7;
+}
+.icon i:hover{
+    opacity: 1;
+}
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.8rem;
+    margin: 1.75rem 0 0.5rem 0;
+    padding: .75rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box_p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box_p2{
+    font-size: .85rem;
+    opacity: .9;
+}
+.badge{
+    background-color: white;
+    border: none;
+    height: 2rem;
+    color: black;
+    border-radius: 100px;
+    padding: .25rem 1rem;
+    width: fit-content;
+    margin: 0.5rem;
+    margin-left: 0;
+    
+    font-weight: 700;
+}
+.dark_badge{
+    background-color: #000;
+    color: #fff;
+}
+.sticky_nav{
+    position: sticky;
+    background-color: #121212;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 10;
+}
+.sticky_nav_icon{
+         margin-left: .75rem;
+}
+.sticky_nav_option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_item{
+    margin-right: 1rem;
+}
+@media(max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+.card_container{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+     height: 240px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     border-radius: 0.5rem;
+     padding: 1rem 1rem 2rem 1rem;
+     margin: 1rem;
+     transition: .5s;
+}
+.card:hover{
+    box-shadow: 2px 4px 8px rgb(148, 145, 145);
+}
+.card_img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card_title{
+    font-weight: 600;
+
+}
+.card_info{
+    font-size: 0.75rem;
+    opacity: .8;
+}
+
+.footer{
+    
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid white;
+    opacity: .4;
+}
+
+.music_player{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.albomb{
+    width: 23%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.player{
+    width: 50%;
+}
+.player_controls{
+     display: flex;
+    align-items: center;
+     justify-content: center; 
+}
+.controls{
+    width: 23%;
+}
+.player_control_icon{
+    height: 1rem;
+    margin-left: 1.75rem;
+    opacity: .7;
+}
+.player_control_icon:hover{
+    opacity: 1;
+}
+
+.playback_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress_bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    
+}
+.progress_bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    height: .2rem;
+    border-radius: 100px;
+    z-index: -1;
+}
+.progress_bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+    
+}
+.alb_img{
+    width: 100%;
+     border-radius: .5rem;
+}
+.albomb_img{
+    width: 20%;
+    height: 3.5rem;
+    border-radius: .5rem;
+
+}
+.alb_title{
+    font-size: .8rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+.alb_info{
+    font-size: .7rem;
+    opacity: .7;
+
+}
+.albomb_icon{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    opacity: .7;
+}
+.color{
+    opacity: .7;
+}
+.color:hover{
+    opacity: 1;
+    font-weight: 900;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    opacity: .7;
+}
+#control_range{
+    opacity: 1;
+    height: .3rem;
+    margin-right: 1rem;
+}
+.control_icon:hover{
+    opacity: 1;
+}
