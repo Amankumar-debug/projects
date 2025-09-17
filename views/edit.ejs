@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit your massage</title>
+    <style>
+        body{
+             margin-left: 20px;
+             background-color: lightgreen;
+        }
+        .btn{
+            border-radius: 5px;
+            background-color: aquamarine;
+        }
+        .msg{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body >
+    <h3>Edit your massage : <b><%= chat._id %> </b></h3>
+    <p>That chat was sent from <b><%= chat.from %></b> to <b><%= chat.to %></b></p>
+    <form method="post" action="/chats/<%=chat._id%>?_method=PUT">
+        <textarea class="msg" rows="10" name="msg" cols="50"><%= chat.msg%></textarea>
+        <button class="btn">Edit</button>
+    </form>
+</body>
+</html>
