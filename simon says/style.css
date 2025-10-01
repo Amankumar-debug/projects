@@ -1,5 +1,6 @@
 body{
     text-align: center;
+    background-color: cornsilk;
 }
 .btn-container{
     display: flex;
@@ -11,6 +12,15 @@ body{
     border: 2px solid black;
     border-radius: 20%;
     margin: 2rem;
+}
+.f-info-socials a{
+    color: black;
+}
+.f-info{
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    justify-content: space-between;
 }
 .red{
     background-color: #d95980;
@@ -29,4 +39,17 @@ body{
 }
 .userflash{
     background-color: green;
+}
+
+@media (max-width:460px){
+    .btn{
+        height: 100px;
+        width: 100px;
+       margin: 1rem;
+    }.hr{
+        display: none;
+    }
+    .f-info{
+        margin-top: 450px;
+    }
 }
